@@ -1,0 +1,66 @@
+.block{
+  width: 1600px;
+  height: 1200px;
+  margin: 0 auto;
+  background: url(public/images/logooo.jpg);
+  border-radius: 16px;
+}
+
+.block_content{
+padding-top: 15%;
+width: 400px;
+margin:0 auto;
+}
+.blocktext{
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 300;
+  background: #ffffff;
+  opacity: 0.7;
+  width: 300px;
+text-align: center;
+margin:0 auto;
+}
+
+.block label{
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background: #ffffff;
+  opacity: 0.7;
+  font-weight: 400;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.submit{
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  width: 400 px;
+}
+.block input{
+display: block;
+margin: 0 auto;
+width: 80%;
+height: 45px;
+border-radius: 10px;  
+border:none;
+outline: none;
+}
+input:focus {
+outline: 0 px;
+color: #000000;
+border-radius: 10px;
+border: 2px solid #436fea;
+}
+
+  .answer{
+    margin-top: 15px;
+  }

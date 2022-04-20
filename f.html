@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <link rel="stylesheet" href="css/hf.css">
+    <script  src="mj.js"></script>
+</head>
+<body>
+  <div class="row">
+  <section class="section">
+    <header>
+      <h1>Register</h1>
+      <h2>Please fill your information in this form</h2>
+    </header>
+    <main>
+      <form>
+        <div class="form-item box-item">
+          <input type="text" name="name" class="tx1" placeholder="Username" data-required>
+          <small class="errorReq"><i class="fa" aria-hidden="true"></i> required field</small>
+        </div>
+        <div class="form-item box-item">
+          <input type="email" name="email" class="tx1" placeholder="Email" data-email data-required>
+          <small class="errorReq"><i class="fa" aria-hidden="true"></i> required field</small>
+          <small class="errorEmail"><i class="fa" aria-hidden="true"></i> email is not valid</small>
+        </div>
+        <div class="form-item box-item">
+          <input type="pass" name="pass" placeholder="Password" data-pass data-required data-count="8" >
+          <small class="errorReq"><i class="fa" aria-hidden="true"></i> required field</small>
+          <small class="errorChar"><i class="fa" aria-hidden="true"></i> must be with the lenght of 8</small>
+            <small class="errorNum"><i class="fa" aria-hidden="true"></i> must be a number</small>
+
+        </div>
+        <div class="form-item box-item">
+          <input type="text" name="phone" placeholder="Phone" data-required data-number data-count="10">
+          <small class="errorReq"><i class="fa" aria-hidden="true"></i> required field</small>
+          <small class="errorNum"><i class="fa" aria-hidden="true"></i> must be a number</small>
+          <small class="errorChar"><i class="fa" aria-hidden="true"></i> must be 10 digits</small>
+        </div>
+        <div class="form-item">
+          <span id="submit" class="submit">Submit</span>
+        </div>
+      </form>
+    </main>
+    <i class="wave"></i>
+  </section>
+</div>
+</body> 
+</html>

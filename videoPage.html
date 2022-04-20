@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:  "Lato", sans-serif;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: bisque;
+  color: darkgoldenrod;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+
+<video autoplay muted loop id="myVideo">
+  <source src="cookiesVideo.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>Soft and Chewy Chocolate Chip Cookies</h1>
+  <p> In a large bowl, beat melted butter, brown sugar and white sugar. Beat until creamy, about 2 minutes.
+     Add egg, vanilla extract and beat until combined, scrape the bottom and sides as needed.
+     In a separate bowl mix flour, baking soda and salt. 
+     Add flour mixture into the butter mixture. 1/2 at the time, mix until combined.
+     Stir in chocolate chips.
+     At this stage if dough is too soft, cover and refrigerate for 20 minutes.
+     Preheat oven to 350°F (175°C). line two baking trays with parchment paper.
+     Scoop the dough onto a prepared baking sheet, leaving at least 3 inches (7.5 cm) of space between the cookies.
+     Refrigerate for 30-40 minutes. 
+      Bake for 10-12 minutes, or until slightly golden around the edges.
+     Allow to cool before serving.
+    </p>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>

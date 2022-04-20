@@ -1,0 +1,95 @@
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(0, 0, 0, .55);
+
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #0000008C;
+
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+#shop {
+    width: 100%;
+
+
+    background-blend-mode: multiply;
+    background-color: white;
+
+    background-size: cover;
+    width: 100%;
+}
+img {
+    background-color: #fafafa;
+    padding: 1px;
+    border: 1px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 375px;
+    max-height: 275px;
+    min-width: 375px;
+    min-height: 275px;
+}
+
+#title {
+    width: 100%;
+    background: transparent;
+    float: left;
+
+}
+
+
+.container-fluid {
+    padding: 3% 15%;
+}
+.navbar {
+    padding-bottom: 4em;
+}
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+}
+.nav-item {
+    padding: 0px 15px;
+    font-size: 1em;
+}
+.nav-link{
+    font-size: 1.2em;
+
+}
+
+#about {
+    text-align: center;
+    font-size: 1em;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+#about > a {color: #fff;}
+
+#about > a:hover{
+    color: #b0b0b0;
+    text-decoration: underline;
+}
+
+#about > a:not(:last-child){
+    margin-right: 7%;
+}
+
+.fixed {
+    z-index: 5000;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+}
+
+header.fixed #logo {
+    color: #343434;
+}
+
+.fixed #about a {color: #343434;}
+.fixed #about a:hover {color: #7c7c7c;}
